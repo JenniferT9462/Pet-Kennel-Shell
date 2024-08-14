@@ -22,7 +22,7 @@ function createPet(nameChoice, speciesChoice,) {
             console.log(`${this.name} has rested their energy levels has been restored to ${this.energy}`);
         }
     }
-    console.log("Created a pet...");
+    console.log("\nCreated a pet...");
     pet.status();
     return pet;
 };
