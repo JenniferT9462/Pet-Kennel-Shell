@@ -31,12 +31,6 @@ let pet1 = createPet("Nellie-P", "Dog");
 pet1.play();
 pet1.feed();
 pet1.status();
-pet1.play();
-pet1.play();
-pet1.status();
-pet1.rest();
-pet1.status();
-
 
 //Pet 2
 let pet2 = createPet("Daisy", "Dog");
@@ -62,4 +56,12 @@ pet5.play();
 pet5.feed();
 pet5.status();
 
+//Testing the rest method
+console.log("\nTesting the rest function:")
+pet1.status();
+pet1.play();
+pet1.play();
+pet1.status();
+pet1.rest();
+pet1.status();
 
