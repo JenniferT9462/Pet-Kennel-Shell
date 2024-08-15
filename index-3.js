@@ -55,6 +55,12 @@ kennel[kennel.length] = pet10;
 //Test if the pets were added w/bracket notation in the kennel
 console.log(kennel);
 
+//A for loop to play w/ all pets
+kennel.forEach(pet => pet.play());
+console.log(kennel);
+
 //A for loop that calls rest on all the objects in the array, kennel
 kennel.forEach(pet => pet.rest());
 console.log(kennel);
+
+
