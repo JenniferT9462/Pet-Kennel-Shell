@@ -46,6 +46,7 @@ kennel.push(pet5);
 //Test if the pets were created and pushed in the kennel
 // console.log(kennel);
 //Add the rest of the pets to the kennel with bracket notation
+//I had just the number of index but, changed it to find the current length and use that index
 kennel[kennel.length] = pet6;
 kennel[kennel.length] = pet7;
 kennel[kennel.length] = pet8;
@@ -54,5 +55,6 @@ kennel[kennel.length] = pet10;
 //Test if the pets were added w/bracket notation in the kennel
 console.log(kennel);
 
+//A for loop that calls rest on all the objects in the array, kennel
 kennel.forEach(pet => pet.rest());
 console.log(kennel);
