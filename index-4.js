@@ -17,6 +17,15 @@ function createPet(name, species, energy, happiness) {
             this.happiness += 10;
             console.log(`You played with ${this.name} their happiness is now ${this.happiness} and energy levels are now ${this.energy}`);
         },
+        dogsPlay() {
+            this.energy -= 30;
+            this.happiness += 15;
+            console.log(`You played with ${this.name} their happiness is now ${this.happiness} and energy levels are now ${this.energy}`);  
+        },
+        bored() {
+            this.happiness -= 15;
+            console.log(`${this.name} is bored. Their happiness levels are ${this.happiness}.`);
+        },
         rest() {
             this.energy = 100;
             console.log(`${this.name} has rested enough. Their energy levels are restored to 100.`);
@@ -61,11 +70,21 @@ for(let i = 0; i < wholeKennel.length; i++) {
     wholeKennel[i].feed();
     console.log(`Feeding ${wholeKennel[i].name}, Happiness is now ${wholeKennel[i].happiness}.`);
 };
-//Loop thru all pets an call status() on each pet
+//Loop thru all pets(wholeKennel) and call status() on each pet
 for(let i = 0; i < wholeKennel.length; i++) {
     wholeKennel[i].status();
 };
 console.log(wholeKennel);
 
-
-
+//For dogs they will get tired faster when playing
+for(let i=0; i<wholeKennel.length; i++){
+    if(wholeKennel[i].species === "Dog") {
+        wholeKennel[i].dogsPlay();
+    }else {
+        wholeKennel[i].play();
+    }
+};
+//A bored function just tried it on the dogs w/foreach
+dogKennel.forEach(pet => pet.status());
+dogKennel.forEach(pet => pet.bored());
+dogKennel.forEach(pet => pet.status());
