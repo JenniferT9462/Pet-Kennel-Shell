@@ -25,9 +25,9 @@ function createPet(name, species, energy, happiness) {
     return pet;
 };
 //Three empty arrays
-const dogKennel = [];
-const catKennel = [];
-const fishTank = [];
+let dogKennel = [];
+let catKennel = [];
+let fishTank = [];
 //Populate 5 pets for each array
 //Dog Kennel
 dogKennel.push(createPet('Fluffy', 'Dog', 80, 80));
@@ -53,8 +53,10 @@ fishTank.push(createPet('Spike', 'Fish', 50, 50));
 
 //For loops for each kennel to feed
 // let wholeKennel = [dogKennel, catKennel, fishTank];
+//The concat() method concatenates (joins) two or more arrays. 
+//The concat() method returns a new array, containing the joined arrays.
+// The concat() method does not change the existing arrays.-W3Schools
 let wholeKennel = dogKennel.concat(catKennel, fishTank);
-
 for(let i = 0; i < wholeKennel.length; i++) {
     wholeKennel[i].feed();
     console.log(`Feeding ${wholeKennel[i].name}, Happiness is now ${wholeKennel[i].happiness}.`);
@@ -63,7 +65,7 @@ for(let i = 0; i < wholeKennel.length; i++) {
 for(let i = 0; i < wholeKennel.length; i++) {
     wholeKennel[i].status();
 };
-
+console.log(wholeKennel);
 
 
 
