@@ -56,11 +56,17 @@ kennel[kennel.length] = pet10;
 console.log(kennel);
 
 //A for loop to play w/ all pets
-kennel.forEach(pet => pet.play());
+// kennel.forEach(pet => pet.play());
+for(let i=0;i<kennel.length;i++) {
+    kennel[i].play();
+};
 console.log(kennel);
 
 //A for loop that calls rest on all the objects in the array, kennel
-kennel.forEach(pet => pet.rest());
+// kennel.forEach(pet => pet.rest());
+for(let i=0;i<kennel.length; i++) {
+    kennel[i].rest();
+};
 console.log(kennel);
 
 
