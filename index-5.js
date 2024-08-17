@@ -2,8 +2,8 @@ function createPet(name, species) {
     let pet = {
         name: name,
         species: species,
-        energy: Math.floor(Math.random() * 101),//Random number 0 to 50
-        happiness: 100, //Math.floor(Math.random() * 101),//Random number 0 to 100
+        energy: Math.floor(Math.random() * 51),//Random number 0 to 50
+        happiness: Math.floor(Math.random() * 100),//Random number 0 to 100
         status() {
             console.log(`Name: ${this.name} Species: ${this.species} Energy: ${this.energy} Happiness: ${this.happiness}`);
         },
@@ -57,7 +57,6 @@ for(let i = 0; i < kennel.length; i++) {
 kennel.forEach(pet => pet.status());
 //Feed only pets that have 30 and below of energy
 //I want to feed until their energy is at 30 or above
-//Function to feed pets until their energy is at least 30
 function feedPets(kennel) {
     //Loop through each pet in the kennel array
     for (let i=0;i<kennel.length;i++)  {
