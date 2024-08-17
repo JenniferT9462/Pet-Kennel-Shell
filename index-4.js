@@ -74,7 +74,7 @@ for(let i = 0; i < wholeKennel.length; i++) {
 for(let i = 0; i < wholeKennel.length; i++) {
     wholeKennel[i].status();
 };
-console.log(wholeKennel);
+// console.log(wholeKennel);
 
 //For dogs they will get tired faster when playing
 for(let i=0; i<wholeKennel.length; i++){
