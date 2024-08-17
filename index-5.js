@@ -60,7 +60,7 @@ kennel.forEach(pet => pet.status());
 function feedPets(kennel) {
     //Loop through each pet in the kennel array
     for (let i=0;i<kennel.length;i++)  {
-        // Continue feeding the hungry pet until energy is 30 or above w/a while statement
+        //Continue feeding the hungry pet until energy is 30 or above w/a while statement
         while (kennel[i].energy < 30) {
             console.log(`Feeding ${kennel[i].name}. Current energy: ${kennel[i].energy}`);
             kennel[i].feed(); // Feed pet w/feed method
@@ -68,7 +68,7 @@ function feedPets(kennel) {
         console.log(`${kennel[i].name} is now well-fed with energy: ${kennel[i].energy}`);
     };
 }
-//Call feed pets
+//Call feed pets & passing kennel array
 feedPets(kennel);
 //Log status after feeding
 kennel.forEach(pet => pet.status());
