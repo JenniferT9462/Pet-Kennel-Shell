@@ -7,7 +7,7 @@ const pet = {
     play: function() {
         //We get the object(pet) w/'this'...'+= 10' adds 10 to happiness count.
         this.happiness += 10;
-        console.log(`${this.name}, loves their pets! Happiness is now ${this.happiness}.`);
+        console.log(`${this.name}, loves to play! Happiness is now ${this.happiness}.`);
     },
     //Add 20 to the happiness count.
     feed: function() {
